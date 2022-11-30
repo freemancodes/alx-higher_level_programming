@@ -1,4 +1,8 @@
 #!/usr/bin/python3
-import sys
-sys.stderr.write("and that piece of art is useful - Dora Korpar, 2015-10-19\n")
-exit(1)
+strtmp = ""
+for i in reversed(range(97, 123)):
+    if (i % 2) == 0:
+        strtmp += chr(i)
+    else:
+        strtmp += chr(i-32)
+print("{}".format(strtmp), end="")
